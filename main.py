@@ -1,8 +1,6 @@
 """C9's best attempt at a function."""
 
 def bad_func():
+    """Does stuff"""
 
-    if 3 > 4:
-        return True
-    else:
-        return False
+    return True
