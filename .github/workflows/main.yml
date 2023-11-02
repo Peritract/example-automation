@@ -12,12 +12,14 @@ jobs:
     steps:
       - name: Speak
         run: echo "I am an automated task!"
-  echo-2:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Speak first
-        run: echo "I print first!"
-      - name: Speak second
-        run: |
-          echo "I print second!"
-          echo "I print third!"
+      - name: Clone
+        uses: actions/checkout@v4
+      - name: Install Python
+        uses: actions/setup-python@v4
+      - name: Install packages
+        run: pip3 install -r requirements.txt
+      - name: Lint
+        run: pylint *.py
