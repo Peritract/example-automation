@@ -12,3 +12,12 @@ jobs:
     steps:
       - name: Speak
         run: echo "I am an automated task!"
+  echo-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Speak first
+        run: echo "I print first!"
+      - name: Speak second
+        run: |
+          echo "I print second!"
+          echo "I print third!"
