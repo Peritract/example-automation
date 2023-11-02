@@ -1,8 +1,6 @@
-def bad_func():
+"""C9's best attempt at a function."""
 
-    if 3 > 4:
-        return True
-    else:
-        return False
-    
+def bad_func():
+    """Does stuff"""
+
     return True
