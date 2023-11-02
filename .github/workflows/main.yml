@@ -13,6 +13,7 @@ jobs:
       - name: Speak
         run: echo "I am an automated task!"
   lint:
+    needs: echo
     runs-on: ubuntu-latest
     steps:
       - name: Clone
