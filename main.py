@@ -3,6 +3,6 @@ def bad_func():
     if 3 > 4:
         return True
     else:
-        return False
+        return False, False
     
     return True
